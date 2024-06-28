@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* btn */
+.btn-nav {
+  box-shadow: inset 0 0 0 0 #fff;
+}
+.btn-hero {
+  box-shadow: inset 0 0 0 0 #052048;
+}
+.btn-footer {
+  box-shadow: inset 0 0 0 0 #fff;
+}
+.btn-contact {
+  box-shadow: inset 0 0 0 0 #083578;
+}
+
+.btn-nav:hover {
+  color: #39a739;
+  box-shadow: inset 0 -100px 0 0 #fff;
+}
+.btn-hero:hover {
+  color: #fff;
+  box-shadow: inset 0 -100px 0 0 #052048;
+}
+.btn-footer:hover {
+  color: #052048;
+  box-shadow: inset 0 -100px 0 0 #fff;
+}
+.btn-contact:hover {
+  color: #fff;
+  box-shadow: inset 0 -100px 0 0 #083578;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/* form */
+input:focus ~ span.placeholderForm,
+input:valid ~ span.placeholderForm {
+  transform: translateY(-42px) translateX(-5px) scale(0.95);
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus ~ .icon-form,
+input:valid ~ .icon-form {
+  transform: translateY(-42px) translateX(-5px) scale(0.95);
+  transition: 0.3s ease-in-out;
+}
+input:valid {
+  border-bottom-color: #39a739;
+}
+
+textarea:focus ~ span.placeholderForm,
+textarea:valid ~ span.placeholderForm {
+  transform: translateY(-42px) translateX(-5px) scale(0.95);
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+textarea:valid {
+  border-bottom-color: #39a739;
+}
+
+
+/* svg  */
+.item {
+  width: 56% !important; 
+  overflow: visible !important;
+  stroke: #0D5CD3 !important;
+  stroke-width: 1 !important;
+  stroke-linejoin: round !important;
+  stroke-linecap: round !important;
+}
+.item2 {
+  width: 56%;
+  overflow: visible;
+  stroke: #c0d3f3;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.item3 {
+  width: 56%;
+  overflow: visible;
+  stroke: #e3e3e3;
+  stroke-width: 3;
+  stroke-linecap: square;
+}
+
